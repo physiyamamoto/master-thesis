@@ -1,1 +1,66 @@
-\documentclass[11pt,a4paper, twosidet]{report}\usepackage[dvipdfmx]{graphicx}%＼usepackage{cite}%＼usepackage{brakezzt}%＼usepackage{amssymb, amsmath, graphics, wrapfig, latexsym, color, bm}\usepackage{amsmath}%＼usepackage{subfigure}%＼usepackage{enumerate}%＼usepackage{mediabb}%＼usepackage{algorithm}%＼usepackage{algpseudocode}%＼usepackage{threeparttable}%＼usepackage{multirow}%＼usepackage{cases}\pagestyle{plain}\begin{document}%＼include{title}%＼pagenumbering{roman}\chapter*{Acknowledgements}ああああああああ\pagestyle{empty}\cleardoublepage	\tableofcontents\cleardoublepage\pagenumbering{arabic}\pagestyle{myheadings}\input{introduction}\clearpage\pagestyle{empty}\cleardoublepage\pagestyle{myheadings}\input{intro_ten}\clearpage\pagestyle{empty}\cleardoublepage\pagestyle{myheadings}\input{method}\clearpage\pagestyle{empty}\cleardoublepage\pagestyle{myheadings}\input{application}\clearpage\pagestyle{empty}\cleardoublepage\pagestyle{myheadings}\input{summary}\clearpage\pagestyle{empty}\cleardoublepage\pagestyle{myheadings}\input{appendix}\clearpage\pagestyle{empty}\cleardoublepage\pagestyle{myheadings}\markboth{}{}\addcontentsline{toc}{chapter}{Bibliography}\bibliography{main}\end{document}
+\documentclass[a4paper, twoside, 11pt]{report}
+\input{preemble}
+\title{Tensor Network renormalization \\[0.4cm] for Non-uniform Classical Spin System}
+\subtitle{非一様な古典スピン系に対するテンソルネットワーク繰り込み}%サブタイトルは1行まで
+\date{January, 2018}
+\supervisor{Prof. Synge Todo}
+\department{Department of Physics, Graduate School of Science, The University of Tokyo}
+\id{35166100}
+\address{Hongo 7-3-1, Bunkyo-ku, Tokyo 113-8656, Japan}
+\author{Takuya Yamamoto}
+
+\begin{document}
+\include{title}
+\pagenumbering{roman}
+\pagestyle{plain}
+\maketitle
+\cleardoublepage
+\chapter*{Acknowledgements}
+aaaaaaaaaa \cite{Levin-Nave2007}
+\pagestyle{empty}
+\cleardoublepage
+\tableofcontents
+\cleardoublepage
+\pagenumbering{arabic}
+\pagestyle{myheadings}
+
+\input{introduction}
+\clearpage
+\pagestyle{empty}
+\cleardoublepage
+\pagestyle{myheadings}
+
+\input{intro_ten}
+\clearpage
+\pagestyle{empty}
+\cleardoublepage
+\pagestyle{myheadings}
+
+\input{method}
+\clearpage
+\pagestyle{empty}
+\cleardoublepage
+\pagestyle{myheadings}
+
+\input{application}
+\clearpage
+\pagestyle{empty}
+\cleardoublepage
+\pagestyle{myheadings}
+
+\input{summary}
+\clearpage
+\pagestyle{empty}
+\cleardoublepage
+\pagestyle{myheadings}
+
+\input{appendix}
+\clearpage
+\pagestyle{empty}
+\cleardoublepage
+\pagestyle{myheadings}
+
+\markboth{}{}
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliography{biblist}
+\end{document}

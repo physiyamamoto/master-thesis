@@ -1,0 +1,77 @@
+\bibliographystyle{naturemag}
+\setlength{\textwidth}{160mm}
+\setlength{\oddsidemargin}{4mm}
+\setlength{\evensidemargin}{-4mm}
+\setlength{\topmargin}{0mm}
+\usepackage{latexsym}%様々な文字が使えるようになる
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{wrapfig}%文章の図への回り込みを可能にする
+\usepackage{caption}
+\captionsetup[figure]{format=plain, labelformat=simple, labelsep=period, font=normal,margin=0pt}%captionのオプション宣言場所。細かい処理をしたい場合つかう。
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+%\usepackage[dvipdfmx]{hyperref} %colorと併用するとハイパーリンクに色がつかない。colorパッケージはそのため使っていない
+%\usepackage{pxjahyper}%hyperrefと使うと便利らしい
+%\hypersetup{% hyperrefオプションリスト
+% setpagesize=false,
+% linktocpage=true,
+% bookmarks=true,
+% bookmarkstype=toc=true,
+% bookmarksnumbered=true,%
+% bookmarksopen=true,%
+% colorlinks=true,%
+% linkcolor=blue,
+% citecolor=blue,
+% urlcolor=blue,
+%}
+%%%%%%%%%% useful private command def %%%%%%%%%%
+\def\average#1{\langle #1 \rangle }
+\def\abs#1{\left| #1 \right|}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\def\name#1{\rm #1}
+\def\defeq{\mathrel{\mathop:}=}%
+\def\italic#1{{\it #1}}
+\newtheorem{dfn}{Deffinition}%[section]
+\newtheorem{thm}{Theorem}%[section]
+\newcommand{\hsp}{\mbox{\hspace{5mm}}}
+\def\refeq#1{(\ref{#1})}
+
+\makeatletter
+%%%%%%%%%%% define  description of equation number %%%%%%%%%%
+%\renewcommand{\theequation}{\arabic{chapter}-\arabic{section}-\arabic{equation}}
+%\@addtoreset{equation}{section}
+
+%%%%%%%%%% define header command %%%%%%%%%
+\newcommand{\Chapter}[3][]{\chapter{#3} \label{#1}\markboth{\MakeUppercase{Chapter #2. \ #3}}{} \hsp}% chapter を使う代わりにこれを使うと簡単にヘッダを支持できる。
+\newcommand{\Section}[3][]{\section{#3} \label{#1} \markright{\MakeUppercase{#2. \ #3}} \hsp} %
+
+%%%%%%%%%%% title page def %%%%%%%%%%%%%%%
+\def\id#1{\def\@id{#1}}
+\def\department#1{\def\@department{#1}}
+\def\subtitle#1{\def\@subtitle{#1}}
+\def\supervisor#1{\def\@supervisor{#1}}
+\def\address#1{\def\@address{#1}}
+\renewcommand{\maketitle}{
+\begin{center}
+{\Huge Master's thesis}\par
+\vspace{4cm}
+{\Huge \@title}\par
+\vspace{0.4cm}
+{\Large (\@subtitle)}\par
+\vspace{2.5cm}
+{\LARGE Supervisor: \@supervisor}\par
+\vspace{2.5cm}
+{\Large \@date}\par
+\vspace{2.5cm}
+{\Huge \@id \ \ \@author}\par
+\vspace{0.2cm}
+{\it {\large \@department}}\par
+{\it {\large \@address}}\par
+\end{center}
+\thispagestyle{empty}
+\clearpage
+\addtocounter{page}{-1}
+}
+\makeatother
+

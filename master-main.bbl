@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{Levin-Nave2007}
+\bibinfo{author}{Levin, M.} \& \bibinfo{author}{Nave, C.~P.}
+\newblock \bibinfo{title}{Tensor renormalization group approach to
+  two-dimensional classical lattice models}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{99}}, \bibinfo{pages}{120601}
+  (\bibinfo{year}{2007}).
+\newblock
+  \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.99.120601}.
+
+\end{thebibliography}
