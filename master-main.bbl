@@ -5,6 +5,30 @@
 \providecommand{\bibinfo}[2]{#2}
 \providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem{harris}
+\bibinfo{author}{Harris, A.~B.}
+\newblock \bibinfo{title}{Effect of random defects on the critical behaviour of
+  ising models}.
+\newblock \emph{\bibinfo{journal}{Journal of Physics C: Solid State Physics}}
+  \textbf{\bibinfo{volume}{7}}, \bibinfo{pages}{1671} (\bibinfo{year}{1974}).
+\newblock \urlprefix\url{http://stacks.iop.org/0022-3719/7/i=9/a=009}.
+
+\bibitem{edwards}
+\bibinfo{author}{Edwards, S.~F.} \& \bibinfo{author}{Anderson, P.~W.}
+\newblock \bibinfo{title}{Theory of spin glasses}.
+\newblock \emph{\bibinfo{journal}{Journal of Physics F: Metal Physics}}
+  \textbf{\bibinfo{volume}{5}}, \bibinfo{pages}{965} (\bibinfo{year}{1975}).
+\newblock \urlprefix\url{http://stacks.iop.org/0305-4608/5/i=5/a=017}.
+
+\bibitem{random-field}
+\bibinfo{author}{Imry, Y.} \& \bibinfo{author}{Ma, S.-k.}
+\newblock \bibinfo{title}{Random-field instability of the ordered state of
+  continuous symmetry}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. Lett.}}
+  \textbf{\bibinfo{volume}{35}}, \bibinfo{pages}{1399--1401}
+  (\bibinfo{year}{1975}).
+\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.35.1399}.
+
 \bibitem{Levin-Nave2007}
 \bibinfo{author}{Levin, M.} \& \bibinfo{author}{Nave, C.~P.}
 \newblock \bibinfo{title}{Tensor renormalization group approach to
@@ -14,5 +38,13 @@
   (\bibinfo{year}{2007}).
 \newblock
   \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.99.120601}.
+
+\bibitem{hotrg}
+\bibinfo{author}{Xie, Z.~Y.} \emph{et~al.}
+\newblock \bibinfo{title}{Coarse-graining renormalization by higher-order
+  singular value decomposition}.
+\newblock \emph{\bibinfo{journal}{Phys. Rev. B}} \textbf{\bibinfo{volume}{86}},
+  \bibinfo{pages}{045139} (\bibinfo{year}{2012}).
+\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevB.86.045139}.
 
 \end{thebibliography}
